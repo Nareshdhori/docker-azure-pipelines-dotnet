@@ -14,7 +14,7 @@ variables:
   imageRepository: 'nareshdhoridockerazurepipelinesdotnet'
   containerRegistry: 'smallregistryone.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.ContainerId)'
+  tag: '$(Build.SourceVersionMessage)'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
