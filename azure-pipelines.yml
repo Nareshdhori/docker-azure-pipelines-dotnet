@@ -11,10 +11,10 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'a25f39ea-9c59-4ef5-88a8-f60f78e75ac8'
-  imageRepository: 'nareshdhoridockerazurepipelinesdotnet'
-  containerRegistry: 'smallregistryone.azurecr.io'
+  imageRepository: 'nareshdhori'
+  containerRegistry: 'smallone.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.DefinitionName)'
+  tag: '$(Build.Buildid)'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
