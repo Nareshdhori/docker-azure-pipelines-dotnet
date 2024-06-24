@@ -14,7 +14,7 @@ variables:
   imageRepository: 'nareshdhori'
   containerRegistry: 'smallone.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.Buildid)'
+  tag: '$(Build.BuildNumber)'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
